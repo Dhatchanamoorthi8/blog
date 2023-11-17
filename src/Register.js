@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
+import Swal from 'sweetalert2'
 
 function Register() {
   const [data, setData] = useState({
@@ -31,10 +32,17 @@ function Register() {
 
     setFormDataArray([...formDataArray, data]);
     setData({ name: '', password: '', email: '' });
+    Swal.fire({
+      title: 'Success',
+      text: 'Your account Register Successfully',
+      icon: 'success',
+      showConfirmButton: false,
+      timer: 1000
+    })
 
     setTimeout(() => {
       navigate('/');
-    }, 2100);
+    },2000);
   };
 
 
