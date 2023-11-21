@@ -8,7 +8,7 @@ function Data() {
       .then(response => response.json())
       .then(data => {
         setData(data);
-        console.log(data);
+        // console.log(data);
 
       })
       .catch(error => {

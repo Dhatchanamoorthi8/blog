@@ -41,6 +41,7 @@ height: 20%;
 width: 30%;
 padding: 0%;
 margin: 0%;
+/* margin-right: 41% !important; */
 }
 
 .blog-body {
@@ -67,6 +68,12 @@ margin: 0%;
   width: 30vw;
   background-color: white;
  }
+ .navbar-head{
+  height: 100vh;
+  width: auto;
+  background-color: black;
+  padding: 20%;
+ }
 }
 @media (min-width: 1199.98px) {
 
@@ -74,6 +81,11 @@ margin: 0%;
   position: absolute;
   top: 2%;
   right: 0%;
+ }
+ .menu-btn{
+  position: absolute;
+  top: 5%;
+  right: 1%;
  }
 
 }
